@@ -1,0 +1,261 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 6,
+    "passes": 6,
+    "pending": 1,
+    "failures": -1,
+    "start": "2024-03-21T17:33:19.455Z",
+    "end": "2024-03-21T17:34:26.766Z",
+    "duration": 67311,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 14.285714285714285,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bc24b7de-329f-4bca-9f8e-547260985bb4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\allSpec.cy.js",
+      "file": "cypress\\e2e\\allSpec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e0d1292a-cf5c-4583-94b5-dbfe9af612d7",
+          "title": "upload document",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "user can upload documents",
+              "fullTitle": "upload document user can upload documents",
+              "timedOut": null,
+              "duration": 14326,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(el.chooseFieldButton).attachFile(\"homepage.png\");\ncy.get(el.uploadButton).click();",
+              "err": {},
+              "uuid": "4ea68b7d-35fd-461d-846d-a5ef27109589",
+              "parentUUID": "e0d1292a-cf5c-4583-94b5-dbfe9af612d7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4ea68b7d-35fd-461d-846d-a5ef27109589"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14326,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "90a3b0fe-f4f4-4fba-a9d4-a4ca217136c9",
+          "title": "creating custom login commands",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "user can login successfully",
+              "fullTitle": "creating custom login commands user can login successfully",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "//cy.login()\ncy.login2(el.username, el.password);",
+              "err": {},
+              "uuid": "62a65e68-0440-4841-99be-e5eae5b1badc",
+              "parentUUID": "90a3b0fe-f4f4-4fba-a9d4-a4ca217136c9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "user can login using reusable functions",
+              "fullTitle": "creating custom login commands user can login using reusable functions",
+              "timedOut": null,
+              "duration": 21691,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.tyAssert(\"commands\", el.usernameField, el.username);\ncy.tyAssert(\"commands\", el.PasswordField, el.password);\ncy.LoginClick(\"commands\", el.LoginButton);",
+              "err": {},
+              "uuid": "18c66f2f-e542-4635-a525-0077ce5e7a0d",
+              "parentUUID": "90a3b0fe-f4f4-4fba-a9d4-a4ca217136c9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "18c66f2f-e542-4635-a525-0077ce5e7a0d"
+          ],
+          "failures": [],
+          "pending": [
+            "62a65e68-0440-4841-99be-e5eae5b1badc"
+          ],
+          "skipped": [],
+          "duration": 21691,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "f7e8cf3a-08cc-4680-9e05-e7be70189ebe",
+          "title": "Automate demo easy web page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "user can perform all actions",
+              "fullTitle": "Automate demo easy web page user can perform all actions",
+              "timedOut": null,
+              "duration": 9433,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(el.Siteimage).should(\"be.visible\");\ncy.get(el.InputFormsDropDownButton).click();\ncy.get(el.SimpleFormDemoButton).click();\ncy.get(el.MessageFIeld).type(el.Message);\ncy.get(el.ShowmessageButton).click();",
+              "err": {},
+              "uuid": "85ff9c8c-d995-4c73-be21-58b40d4c300e",
+              "parentUUID": "f7e8cf3a-08cc-4680-9e05-e7be70189ebe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "user can input on value A field",
+              "fullTitle": "Automate demo easy web page user can input on value A field",
+              "timedOut": null,
+              "duration": 72,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(el.value1Field).scrollIntoView().fill(4);",
+              "err": {},
+              "uuid": "599b8d79-4f09-46d2-b1ab-9b69c49e97ee",
+              "parentUUID": "f7e8cf3a-08cc-4680-9e05-e7be70189ebe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "user can input on value B field",
+              "fullTitle": "Automate demo easy web page user can input on value B field",
+              "timedOut": null,
+              "duration": 32,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(el.value2Field).scrollIntoView().fill(5);",
+              "err": {},
+              "uuid": "a81a8939-3bf9-4caf-866c-ab3bda514234",
+              "parentUUID": "f7e8cf3a-08cc-4680-9e05-e7be70189ebe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "user can click on get total button",
+              "fullTitle": "Automate demo easy web page user can click on get total button",
+              "timedOut": null,
+              "duration": 112,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(el.GetTotalButton).click();",
+              "err": {},
+              "uuid": "f7da9671-a2ac-4a64-9f70-e4cf4786b1e6",
+              "parentUUID": "f7e8cf3a-08cc-4680-9e05-e7be70189ebe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "85ff9c8c-d995-4c73-be21-58b40d4c300e",
+            "599b8d79-4f09-46d2-b1ab-9b69c49e97ee",
+            "a81a8939-3bf9-4caf-866c-ab3bda514234",
+            "f7da9671-a2ac-4a64-9f70-e4cf4786b1e6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9649,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "reportDir": "cypress/report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

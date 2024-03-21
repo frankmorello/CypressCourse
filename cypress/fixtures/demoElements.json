@@ -1,0 +1,13 @@
+{
+
+    "Siteimage":"#site-name > a",
+    "InputFormsDropDownButton":":nth-child(1) > :nth-child(1) > .dropdown-toggle",
+    "SimpleFormDemoButton":".open > .dropdown-menu > :nth-child(1) > a",
+    "MessageFIeld":".form-group > #user-message",
+    "Message":"my name is obinna",
+    "ShowmessageButton":"#get-input > .btn",
+    "value1Field":"#value1",
+    "value2Field":"#value2",
+    "GetTotalButton":"#gettotal > .btn"
+
+}

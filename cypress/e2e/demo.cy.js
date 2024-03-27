@@ -8,7 +8,7 @@ cy.fixture("demoElements.json").then((sel)=>{
 })
 })
 
-itg("user can perform all actions",()=>{
+it("user can perform all actions",()=>{
 cy.get(el.Siteimage).should("be.visible")
 cy.get(el.InputFormsDropDownButton).click()
 cy.get(el.SimpleFormDemoButton).click()
